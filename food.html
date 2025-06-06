@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lwal Lwal Lay | Foods</title>
+    <!-- <link rel="icon" href="./images/logo/color_icon.png" sizes="32x32"> -->
+    <link rel="icon" href="./images/logo/color_icon(snip).png" type="image/png" sizes="64x64" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- font-awesome1 -->
+    <script src="https://kit.fontawesome.com/ab133c3946.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/category.css">
+    <!-- custom js -->
+    <script src="./js/category.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <!-- Start Navbar section -->
+        <section>
+            <!-- Message -->
+            <div id="top-message" class="text-center top-message">✨ Fresh Snacks | 🥤 Cold Drinks | 📦 Daily Essentials</div>
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg box-shadow title" id="navbar">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="site-logo" href="#">
+                        <img src="./images/logo/color_icon_label(snip).png" class="img-fluid" alt="logo">
+                    </a> 
+    
+                    <!-- Burger btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Navbar links -->
+                    <div id="nav" class="navbar-collapse collapse p-3 p-md-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a href="" class="dropdown-item">Food</a></li>
+                                    <li><a href="" class="dropdown-item">Drinks</a></li>
+                                    <li><a href="" class="dropdown-item">Clothes</a></li>
+                                    <li><a href="" class="dropdown-item">Hygiene products</a></li>
+                                    <li><a href="" class="dropdown-item">Electronic</a></li>
+                                    <li><a href="" class="dropdown-item">Instruments</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Order Delivery</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Download App
+                                </a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="#">Window</a></li>
+                                    <li><a class="dropdown-item" href="#">Macs</a></li>
+                                    <li><a class="dropdown-item" href="#">Mobile</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Promotion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <!-- Login-->
+                        <div class="btn-container ms-md-5">
+                            <button class="btn nav-btn" style="padding: 3px 15px;">Sign Up</button>
+                            <button class="btn nav-btn" style="padding: 3px 15px;">Log In</button>
+                        </div>
+                    </div>
+    
+                    
+                </div>
+            </nav>
+    
+        </section>
+        <!--  End Navbar section -->
+        
+    </header>
+    
+    <!-- Start Banner section -->
+    <section class="banner-section mb-5">
+        <div class="container-fluid mx-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="banner-title title">Food</h1>
+                    <div class="banner-bg-image">
+                        <img src="./images/food/food-banner.jpg" alt="">
+                    </div>
+                    <div class="banner-content">
+                        <p class="banner-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-custom banner-btn ">View Products</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Start Banner section -->
+    
+    <!-- Start Main Content -->
+    <section class="content-section">
+        <div class="container-fluid">
+            <div class="row">
+                <!--start left7 dropdown section -->
+                <div class="col-md-2">
+                    <div class="container">
+                        <div class="sortBy ps-3">
+                            <h5 class="title">Sort By</h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                <input class="radioBtn me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                                <label class="form-check-label" for="firstRadio">Featured</label>
+                                </li>
+                                <li class="list-group-item">
+                                <input class="radioBtn me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                                <label class="form-check-label" for="secondRadio">Product Name(A-Z)</label>
+                                </li>
+                                <li class="list-group-item">
+                                <input class="radioBtn me-1" type="radio" name="listGroupRadio" value="" id="thirdRadio">
+                                <label class="form-check-label" for="thirdRadio">Product Name(Z-A)</label>
+                                </li>
+                                <li class="list-group-item">
+                                <input class="radioBtn me-1" type="radio" name="listGroupRadio" value="" id="fouthRadio">
+                                <label class="form-check-label" for="thirdRadio">Newest</label>
+                                </li>
+                                <li class="list-group-item">
+                                <input class="radioBtn me-1" type="radio" name="listGroupRadio" value="" id="fifthRadio">
+                                <label class="form-check-label" for="thirdRadio">Most Popular</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Brand -->
+                        <div class="dropdowns">
+                            <h5 class="dropbutton title">Brand</h5>
+                            <ul class="dropdowns-menu">
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-brand" id="food-brand-1"><label for="food-brand-1">lorem1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-brand" id="food-brand-2"><label for="food-brand-2">lorem2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-brand" id="food-brand-3"><label for="food-brand-3">lorem3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-brand" id="food-brand-4"><label for="food-brand-4">lorem4</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Flavor -->
+                        <div class="dropdowns">
+                            <h5 class="dropbutton title">Flavor</h5>
+                            <ul class="dropdowns-menu">
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-flavor" id="food-flavor-1"><label for="food-flavor-1">lorem1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-flavor" id="food-flavor-2"><label for="food-flavor-2">lorem2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-flavor" id="food-flavor-3"><label for="food-flavor-3">lorem3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-flavor" id="food-flavor-4"><label for="food-flavor-4">lorem4</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Size -->
+                        <div class="dropdowns">
+                            <h5 class="dropbutton title">Size</h5>
+                            <ul class="dropdowns-menu">
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-size" id="food-size-1"><label for="food-size-1">lorem1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-size" id="food-size-2"><label for="food-size-2">lorem2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-size" id="food-size-3"><label for="food-size-3">lorem3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-size" id="food-size-4"><label for="food-size-4">lorem4</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Type -->
+                        <div class="dropdowns">
+                            <h5 class="dropbutton title">Type</h5>
+                            <ul class="dropdowns-menu">
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-type" id="food-type-1"><label for="food-type-1">lorem1</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-type" id="food-type-2"><label for="food-type-2">lorem2</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-type" id="food-type-3"><label for="food-type-3">lorem3</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" class="checkboxs" name="food-type" id="food-type-4"><label for="food-type-4">lorem4</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <!--end left dropdown section -->      
+                
+                <!-- Start Right Product Card Section -->
+                <div class="col-md-10 bgs">
+                    <div class="row">
+                        <!-- card-1 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/burgerbg.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product1</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-2 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/food/product1.png" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product2</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-3 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/card1.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product3</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-4 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/card3.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product4</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-5 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/card5.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product5</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-6 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/card4.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product6</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-7 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/carousel-card1.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product7</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-8 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/carousel-card6.jpeg" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product8</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-9 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/carousel-card5.png" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product9</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- card-10 -->
+                        <div class="col-md-4 col-sm-6 p-2">
+                            <div class="product-cards">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="./images/logo/color_icon(snip).png" class="img-fluid" alt="">
+                                    </div>
+                                    <span class="title">Product10</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- End Right Product Card Section -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Start Footer Section -->
+    <footer class="container-fluidmy-3 py-3">
+        <div class="container">
+            <div class="row first-footer">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-3">
+                            <ul class="footer-list m-0 p-0">
+                                <li><h5 class="title">Get to Know Us</h5></li>
+                                <li><a href="#">About Lwal Lwal Lay</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Newsroom</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="footer-list m-0 p-0">
+                                <li><h5 class="title">Franchise Info</h5></li>
+                                <li><a href="#">Our Business Model</a></li>
+                                <li><a href="#">Franchise Process</a></li>
+                                <li><a href="#">Franchising for Veterans</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="footer-list m-0 p-0">
+                                <li><h5 class="title">How Can We Help?</h5></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Feedback</a></li>
+                                <li><a href="#">New Vendor Information</a></li>
+                                <li><a href="#">Vendor Guideline</a></li>
+                                <li><a href="#">Financial Service</a></li>
+                                <li><a href="#">Business Fuel Cards</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-3">
+                            <ul class="footer-list m-0 p-0">
+                                <li><h5 class="title">Download</h5></li>
+                                <li><a href="#">Lwal Lwal Lay App</a></li>
+                                <li><a href="#">Lwal Lwal Lay Deliver App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 p-0">
+                    <a href="#" class="image-container w-100 d-flex justify-content-end">
+                        <img src="./images/logo/color_icon_label_main(snip).png" alt="" class="img-fluid m-0"> 
+                    </a>
+                </div>
+            </div>
+    
+            <!-- term & conditions part -->
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="footer-links">
+                        <a href="#">Terms & Conditions </a>|
+                        <a href="#"> Privacy Notice </a>|
+                        <a href="#"> FAQs </a>|
+                        <a href="#"> Califonia Privacy </a>|
+                        <a href="#"> Your Privacy Choices </a>|
+                        <a href="#"> California Transparency In Supply Chains Act </a><br/>
+                        <a href="#"> CA Cleaning Products Right to Know </a>|
+                        <a href="#"> Do Not Sell or Share My Information </a>|
+                        <a href="#"> Site Accessibility Statement </a>|
+                        <a href="#"> California Assembly Bill 1305 </a>|
+                    </div>
+                    <span class="copyright-description">©2025 7-ELEVEN, Inc. All rights reserved. 7-ELEVEN, 7NOW, 7Rewards, Brainfreeze, Big Bite, Big Gulp, Slurpee and the Tri-Stripe Design are registered trademarks of 7-ELEVEN.</span>
+                </div>
+                <div class="col-md-4 p-0 d-flex justify-content-end">
+                    <a href="#" class="footer-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="footer-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="footer-icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- sticky feedback button-->
+    <div class="btn-group feedback-btn-container" id="feedbackBtnContainer" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-success" onclick="openModal()">Feedback</button>
+        <button type="button" class="btn btn-success close-btn" onclick="closeFeedbackBtn(event)"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+    
+    
+    <!--Feedback Modal -->
+    <div class="modal fade" id="feedbackModal" id="exampleModal" tabindex="-1" aria-labelledby="feebackModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content w-100">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 me-auto text-dark" id="feedbackModal">Feedback</h1>
+            <i class="fa-solid fa-circle-xmark" style="font-size: 20px; color:rgb(217, 15, 15); cursor:pointer;" onclick="closeModal()"></i>
+          </div>
+          <div class="modal-body">
+           <textarea class="form-control" rows="4" placeholder="Enter your feedback..."></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="closeModal()">Close</button>
+            <button type="button" class="btn btn-primary">Submit Feedback</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

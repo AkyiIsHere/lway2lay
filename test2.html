@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Radio Button</title>
+    <!-- <link rel="icon" href="./images/logo/color_icon.png" sizes="32x32"> -->
+    <link rel="icon" href="./images/logo/color_icon(snip).png" type="image/png" sizes="64x64" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- swiper-js css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- swiper-js js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- font-awesome1 -->
+    <script src="https://kit.fontawesome.com/ab133c3946.js" crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+        :root {
+            --primary-color: #ffba08;
+            --secondary-color: #4ecdc4;
+            --background-color: #292f36;
+            --body-font: "Fjalla One", serif;
+            --title-font: "Oswald", serif;
+        }
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: var(--body-font);
+            background-color: var(--background-color);
+            color: white;
+            line-height: 1.6;
+
+            overflow-x: hidden;
+        }
+
+        .title{
+            font-family: var(--title-font);
+            font-weight: 900;
+        }
+
+        .btn-custom{
+            font-size:24px;
+            color:var(--background-color);
+            background:var(--primary-color);
+        }
+
+        .btn-custom:hover{
+            background:var(--secondary-color);
+        }
+
+        .btn-custom2{
+            font-size:24px;
+            
+            color:var(--background-color);
+            background: #46beb6;
+        }
+
+        .btn-custom2:hover{
+            background:var(--secondary-color);
+        }
+
+        /* Header section */
+        /* Navbar section */
+
+        .top-message {
+            width: 100%;
+            height: 40px;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+            background-color: var(--secondary-color);
+            color: black;
+            
+            text-align: center;
+            padding: 10px 0;
+
+        
+        }
+
+        .site-logo{
+            width: 15%;
+            min-width: 200px;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 40px; /* Adjusted to avoid overlap with message-bar */
+            left: 0;
+
+            width: 100%;
+            min-height: 60px;
+            background-color: var(--background-color);
+            color: white;
+            
+            text-align: center;
+            border-bottom: 0.1px solid lightgray;
+            padding: 0 0;
+
+            transition: top 0.5s;
+            z-index: 100;
+        }
+
+        .nav-link{
+            color: var(--primary-color);
+        }
+
+        .nav-btn, .navbar-toggler{
+            background: var(--primary-color);
+        }
+
+        .nav-btn:hover{
+            background: var(--secondary-color);
+        }
+
+        .nav-link:hover, .dropdown-item:hover{
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .nav-link:focus, .dropdown-item:focus{ 
+            color: var(--secondary-color);
+        }
+
+/* End Navbar section */
+
+/* Start Banner section */
+.banner-section{
+    width: 100vw;
+    background-image: url("../images/burgerbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banners{
+    width: 50%;
+    height: 100vh;
+    
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+.banners .content{
+    margin: 50px;
+}
+/* End Banner section */
+
+    .sticky {
+        top: 0;
+    }
+
+    .box-shadow{
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Start Navbar section -->
+        <section>
+            <!-- Message -->
+            <div id="top-message" class="text-center top-message">✨ Fresh Snacks | 🥤 Cold Drinks | 📦 Daily Essentials</div>
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg box-shadow title" id="navbar">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a class="site-logo" href="#">
+                        <img src="./images/logo/color_icon_label(snip).png" class="img-fluid" alt="logo">
+                    </a> 
+
+                    <!-- Burger btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar links -->
+                    <div id="nav" class="navbar-collapse collapse p-3 p-md-0">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a href="" class="dropdown-item">Food</a></li>
+                                    <li><a href="" class="dropdown-item">Drinks</a></li>
+                                    <li><a href="" class="dropdown-item">Clothes</a></li>
+                                    <li><a href="" class="dropdown-item">Hygiene products</a></li>
+                                    <li><a href="" class="dropdown-item">Electronic</a></li>
+                                    <li><a href="" class="dropdown-item">Instruments</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Order Delivery</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Download App
+                                </a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="#">Window</a></li>
+                                    <li><a class="dropdown-item" href="#">Macs</a></li>
+                                    <li><a class="dropdown-item" href="#">Mobile</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Promotion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <!-- Login-->
+                        <div class="btn-container ms-md-5">
+                            <button class="btn nav-btn" style="padding: 3px 15px;">Sign Up</button>
+                            <button class="btn nav-btn" style="padding: 3px 15px;">Log In</button>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </nav>
+
+        </section>
+        <!--  End Navbar section -->
+        
+        <!--  Start Banner section -->
+        <section class="banner-section">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banners d-flex justify-content-center align-items-center">
+                        <div class="container content">
+                            <h1 class="mb-3 title" style="font-size: 38px;">Satisfy Your Cravings at <img src="./images/logo/color_label(snip).png" alt="label icon" style="width: 263px;"></h1>
+                            <p>Bite into deliciousness with our fresh, juicy burgers! Whether you're on the go or craving a quick snack, we’ve got the perfect meal to fuel your day. Stop by and taste the goodness! 😋🔥</p>
+                            <div class=" text-center">
+                                <button class="btn btn-custom px-3">Order Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  End Banner section -->
+    </header>
+
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum minus amet, expedita repellendus laboriosam tempore ut dignissimos illum? Repellat, officia eum dignissimos eveniet, rerum, veniam blanditiis dolore nulla delectus est commodi perspiciatis ipsam reiciendis asperiores magni placeat qui modi repellendus nostrum deleniti excepturi voluptatum nemo odit eaque? Libero, et consequuntur repudiandae reprehenderit, quaerat aliquam nemo amet tenetur hic laborum vero? Magni eos earum aliquam laudantium hic consequuntur rem ipsum labore ad. Expedita dignissimos aliquid rem eligendi reiciendis sed excepturi itaque debitis natus voluptatum praesentium in eius officiis sapiente maxime, facilis impedit numquam fugit ipsa recusandae accusantium ipsum libero! Reprehenderit sapiente ullam, doloribus repudiandae atque cumque laboriosam reiciendis quia obcaecati. Dolorem ipsam debitis placeat et rerum eveniet labore omnis minima recusandae eligendi dignissimos cupiditate illum provident error inventore illo voluptatem, deleniti rem quod consectetur autem. Dicta magni neque, eveniet earum aut repellat at nobis non libero voluptatem enim laudantium voluptatibus sapiente perspiciatis obcaecati ad quis provident eaque labore iusto accusantium blanditiis sit voluptatum! Dolores impedit iure consequuntur laudantium accusamus, quaerat explicabo deleniti nisi facilis earum dolor corporis, odit recusandae illo laborum perspiciatis fugiat enim dolorum excepturi nam aspernatur dicta debitis at omnis? Ipsum in vero suscipit nulla consequuntur optio voluptate. Labore vel perferendis earum et dolores repudiandae tempore modi esse voluptatum sed ipsam fugiat quod nisi minima nulla quasi ad quia facere animi, adipisci ratione laborum suscipit accusantium quae? Eligendi cupiditate excepturi ab id fuga ut doloremque laboriosam, aut beatae nesciunt laudantium consequuntur, fugiat quos! Reiciendis ipsam dolorum atque inventore deleniti assumenda? Neque illum consequuntur voluptatum officia culpa, aperiam ad nobis, cumque fugit odio eligendi adipisci architecto assumenda officiis eum exercitationem iusto reprehenderit ab! Distinctio perspiciatis ducimus soluta animi ex ab dicta suscipit aspernatur tempora modi dolore ipsam, incidunt asperiores pariatur maxime quod omnis. Suscipit animi tempora odit vero eum repellendus blanditiis voluptatum reiciendis quas, quae, dignissimos aperiam beatae ex quidem pariatur cupiditate. Voluptates ad labore voluptatibus soluta fugiat qui, assumenda, quam sunt aspernatur possimus, aliquid vero. Ut vel aliquid ratione fuga eos, reprehenderit, consectetur molestias sunt incidunt minima sequi repellendus iusto. Nesciunt ipsum minima rem, atque, quam labore eligendi numquam voluptatem maiores, sequi dolorum saepe nostrum culpa libero repudiandae? Odio, nulla accusantium? Dicta perferendis aliquid provident rerum nisi quia itaque corporis accusamus quaerat, hic vel id. Qui, repellendus, sequi voluptatum labore dignissimos tempore accusamus odit fugiat cupiditate velit quo delectus nostrum voluptates officiis sapiente similique. Quam, quis reprehenderit praesentium, maxime natus explicabo ex recusandae ducimus ipsam iure, consequuntur nisi accusantium? Corrupti consequatur quo at molestiae distinctio minus, ab iusto asperiores quidem quibusdam voluptate voluptatibus minima accusantium, velit aperiam tenetur, inventore deleniti pariatur adipisci necessitatibus assumenda. Quae mollitia impedit fugiat ducimus tempore accusantium eos quos ad ab repudiandae nostrum error perferendis velit in et qui facilis reprehenderit nemo eligendi, cupiditate fugit harum consectetur modi? Error eos laborum, perferendis veritatis ut dignissimos officia tenetur perspiciatis quidem corrupti incidunt adipisci culpa eaque dolores doloremque obcaecati officiis aspernatur nisi totam iusto explicabo. Est, fugiat ipsa. Harum officiis nostrum, odio cumque dicta esse adipisci accusantium.</div>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum minus amet, expedita repellendus laboriosam tempore ut dignissimos illum? Repellat, officia eum dignissimos eveniet, rerum, veniam blanditiis dolore nulla delectus est commodi perspiciatis ipsam reiciendis asperiores magni placeat qui modi repellendus nostrum deleniti excepturi voluptatum nemo odit eaque? Libero, et consequuntur repudiandae reprehenderit, quaerat aliquam nemo amet tenetur hic laborum vero? Magni eos earum aliquam laudantium hic consequuntur rem ipsum labore ad. Expedita dignissimos aliquid rem eligendi reiciendis sed excepturi itaque debitis natus voluptatum praesentium in eius officiis sapiente maxime, facilis impedit numquam fugit ipsa recusandae accusantium ipsum libero! Reprehenderit sapiente ullam, doloribus repudiandae atque cumque laboriosam reiciendis quia obcaecati. Dolorem ipsam debitis placeat et rerum eveniet labore omnis minima recusandae eligendi dignissimos cupiditate illum provident error inventore illo voluptatem, deleniti rem quod consectetur autem. Dicta magni neque, eveniet earum aut repellat at nobis non libero voluptatem enim laudantium voluptatibus sapiente perspiciatis obcaecati ad quis provident eaque labore iusto accusantium blanditiis sit voluptatum! Dolores impedit iure consequuntur laudantium accusamus, quaerat explicabo deleniti nisi facilis earum dolor corporis, odit recusandae illo laborum perspiciatis fugiat enim dolorum excepturi nam aspernatur dicta debitis at omnis? Ipsum in vero suscipit nulla consequuntur optio voluptate. Labore vel perferendis earum et dolores repudiandae tempore modi esse voluptatum sed ipsam fugiat quod nisi minima nulla quasi ad quia facere animi, adipisci ratione laborum suscipit accusantium quae? Eligendi cupiditate excepturi ab id fuga ut doloremque laboriosam, aut beatae nesciunt laudantium consequuntur, fugiat quos! Reiciendis ipsam dolorum atque inventore deleniti assumenda? Neque illum consequuntur voluptatum officia culpa, aperiam ad nobis, cumque fugit odio eligendi adipisci architecto assumenda officiis eum exercitationem iusto reprehenderit ab! Distinctio perspiciatis ducimus soluta animi ex ab dicta suscipit aspernatur tempora modi dolore ipsam, incidunt asperiores pariatur maxime quod omnis. Suscipit animi tempora odit vero eum repellendus blanditiis voluptatum reiciendis quas, quae, dignissimos aperiam beatae ex quidem pariatur cupiditate. Voluptates ad labore voluptatibus soluta fugiat qui, assumenda, quam sunt aspernatur possimus, aliquid vero. Ut vel aliquid ratione fuga eos, reprehenderit, consectetur molestias sunt incidunt minima sequi repellendus iusto. Nesciunt ipsum minima rem, atque, quam labore eligendi numquam voluptatem maiores, sequi dolorum saepe nostrum culpa libero repudiandae? Odio, nulla accusantium? Dicta perferendis aliquid provident rerum nisi quia itaque corporis accusamus quaerat, hic vel id. Qui, repellendus, sequi voluptatum labore dignissimos tempore accusamus odit fugiat cupiditate velit quo delectus nostrum voluptates officiis sapiente similique. Quam, quis reprehenderit praesentium, maxime natus explicabo ex recusandae ducimus ipsam iure, consequuntur nisi accusantium? Corrupti consequatur quo at molestiae distinctio minus, ab iusto asperiores quidem quibusdam voluptate voluptatibus minima accusantium, velit aperiam tenetur, inventore deleniti pariatur adipisci necessitatibus assumenda. Quae mollitia impedit fugiat ducimus tempore accusantium eos quos ad ab repudiandae nostrum error perferendis velit in et qui facilis reprehenderit nemo eligendi, cupiditate fugit harum consectetur modi? Error eos laborum, perferendis veritatis ut dignissimos officia tenetur perspiciatis quidem corrupti incidunt adipisci culpa eaque dolores doloremque obcaecati officiis aspernatur nisi totam iusto explicabo. Est, fugiat ipsa. Harum officiis nostrum, odio cumque dicta esse adipisci accusantium.</div>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum minus amet, expedita repellendus laboriosam tempore ut dignissimos illum? Repellat, officia eum dignissimos eveniet, rerum, veniam blanditiis dolore nulla delectus est commodi perspiciatis ipsam reiciendis asperiores magni placeat qui modi repellendus nostrum deleniti excepturi voluptatum nemo odit eaque? Libero, et consequuntur repudiandae reprehenderit, quaerat aliquam nemo amet tenetur hic laborum vero? Magni eos earum aliquam laudantium hic consequuntur rem ipsum labore ad. Expedita dignissimos aliquid rem eligendi reiciendis sed excepturi itaque debitis natus voluptatum praesentium in eius officiis sapiente maxime, facilis impedit numquam fugit ipsa recusandae accusantium ipsum libero! Reprehenderit sapiente ullam, doloribus repudiandae atque cumque laboriosam reiciendis quia obcaecati. Dolorem ipsam debitis placeat et rerum eveniet labore omnis minima recusandae eligendi dignissimos cupiditate illum provident error inventore illo voluptatem, deleniti rem quod consectetur autem. Dicta magni neque, eveniet earum aut repellat at nobis non libero voluptatem enim laudantium voluptatibus sapiente perspiciatis obcaecati ad quis provident eaque labore iusto accusantium blanditiis sit voluptatum! Dolores impedit iure consequuntur laudantium accusamus, quaerat explicabo deleniti nisi facilis earum dolor corporis, odit recusandae illo laborum perspiciatis fugiat enim dolorum excepturi nam aspernatur dicta debitis at omnis? Ipsum in vero suscipit nulla consequuntur optio voluptate. Labore vel perferendis earum et dolores repudiandae tempore modi esse voluptatum sed ipsam fugiat quod nisi minima nulla quasi ad quia facere animi, adipisci ratione laborum suscipit accusantium quae? Eligendi cupiditate excepturi ab id fuga ut doloremque laboriosam, aut beatae nesciunt laudantium consequuntur, fugiat quos! Reiciendis ipsam dolorum atque inventore deleniti assumenda? Neque illum consequuntur voluptatum officia culpa, aperiam ad nobis, cumque fugit odio eligendi adipisci architecto assumenda officiis eum exercitationem iusto reprehenderit ab! Distinctio perspiciatis ducimus soluta animi ex ab dicta suscipit aspernatur tempora modi dolore ipsam, incidunt asperiores pariatur maxime quod omnis. Suscipit animi tempora odit vero eum repellendus blanditiis voluptatum reiciendis quas, quae, dignissimos aperiam beatae ex quidem pariatur cupiditate. Voluptates ad labore voluptatibus soluta fugiat qui, assumenda, quam sunt aspernatur possimus, aliquid vero. Ut vel aliquid ratione fuga eos, reprehenderit, consectetur molestias sunt incidunt minima sequi repellendus iusto. Nesciunt ipsum minima rem, atque, quam labore eligendi numquam voluptatem maiores, sequi dolorum saepe nostrum culpa libero repudiandae? Odio, nulla accusantium? Dicta perferendis aliquid provident rerum nisi quia itaque corporis accusamus quaerat, hic vel id. Qui, repellendus, sequi voluptatum labore dignissimos tempore accusamus odit fugiat cupiditate velit quo delectus nostrum voluptates officiis sapiente similique. Quam, quis reprehenderit praesentium, maxime natus explicabo ex recusandae ducimus ipsam iure, consequuntur nisi accusantium? Corrupti consequatur quo at molestiae distinctio minus, ab iusto asperiores quidem quibusdam voluptate voluptatibus minima accusantium, velit aperiam tenetur, inventore deleniti pariatur adipisci necessitatibus assumenda. Quae mollitia impedit fugiat ducimus tempore accusantium eos quos ad ab repudiandae nostrum error perferendis velit in et qui facilis reprehenderit nemo eligendi, cupiditate fugit harum consectetur modi? Error eos laborum, perferendis veritatis ut dignissimos officia tenetur perspiciatis quidem corrupti incidunt adipisci culpa eaque dolores doloremque obcaecati officiis aspernatur nisi totam iusto explicabo. Est, fugiat ipsa. Harum officiis nostrum, odio cumque dicta esse adipisci accusantium.</div>
+</body>
+</html>
